@@ -1,0 +1,52 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin" // تطبيق Flutter Gradle Plugin
+    id "com.google.gms.google-services" // Google Services Plugin
+}
+
+android {
+    namespace = "com.example.kunhii"
+    compileSdk = 33 // رقم نسخة SDK التي يستخدمها المشروع
+    ndkVersion = "23.1.7779620"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        applicationId = "com.example.kunhii"
+        minSdk = 21 // الحد الأدنى للـ SDK
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            signingConfig = signingConfigs.debug // يمكنك تغيير هذا لاحقًا
+        }
+    }
+}
+
+flutter {
+    source = "../.."
+}
+
+dependencies {
+    // Firebase BOM لتحديد جميع مكتبات Firebase
+    implementation platform('com.google.firebase:firebase-bom:33.6.0')
+
+    // Firebase Analytics
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // مكتبات Firebase الأخرى حسب الحاجة
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-storage'
+}

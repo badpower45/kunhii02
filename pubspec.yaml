@@ -1,0 +1,42 @@
+name: kunhii
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you want to publish the package
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  http: ^1.2.2
+  image_picker: ^1.1.2
+
+  # Firebase dependencies
+  firebase_core: ^3.5.0
+  firebase_auth: ^5.3.3
+  cloud_firestore: ^5.0.0
+  firebase_analytics: ^11.3.5
+  firebase_storage: ^12.3.6
+
+  # Google Sign-In
+  google_sign_in: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/shop1_logo.jpg
+    - assets/images/shop2_logo.jpg
+    - assets/images/product1.jpg
+    - assets/images/product2.jpg
+    - assets/images/productA.jpg
+    - assets/images/productB.jpg

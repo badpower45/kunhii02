@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "964462171692",
+    "project_id": "kunhii-daf8a",
+    "storage_bucket": "kunhii-daf8a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964462171692:android:87ffab7cd4516f64a4a389",
+        "android_client_info": {
+          "package_name": "Kunhii.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSzi85WOXg8xZjq6N4LOaV-g7YaYNGw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:964462171692:android:69b1e03c74c27c42a4a389",
+        "android_client_info": {
+          "package_name": "com.kunhii.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSzi85WOXg8xZjq6N4LOaV-g7YaYNGw8k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
